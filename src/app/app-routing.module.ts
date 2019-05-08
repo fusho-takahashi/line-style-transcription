@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { TalkListComponent } from './pages/talk-list/talk-list.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/talk-list', pathMatch: 'full' },
+  { path: 'talk-list', component: TalkListComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
