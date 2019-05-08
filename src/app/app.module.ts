@@ -7,9 +7,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { ListComponent } from './components/list/list.component';
 import { TalkListComponent } from './pages/talk-list/talk-list.component';
+import { TalkComponent } from './pages/talk/talk.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ListComponent, TalkListComponent],
+  declarations: [AppComponent, HeaderComponent, ListComponent, TalkListComponent, TalkComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
