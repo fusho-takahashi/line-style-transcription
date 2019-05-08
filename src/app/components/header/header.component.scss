@@ -1,0 +1,22 @@
+.header-container {
+  height: 48px;
+  display: grid;
+  grid-template-columns: 48px auto 48px;
+  background-color: #f172a3;
+  color: #fff;
+  .left-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
