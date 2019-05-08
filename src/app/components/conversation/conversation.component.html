@@ -1,3 +1,18 @@
-<p>
-  conversation works!
-</p>
+<div class="conv-container">
+  <div class="icon-right">
+    <div class="conv-icon">
+      <img
+        src="../../../assets/img/{{ convMem }}.jpg"
+        [class.pink]="convMem === '夏生のん'"
+        [class.red]="convMem === '桜瀬もえ'"
+        [class.white]="convMem === '美和花樺'"
+        [class.yellow]="convMem === '双葉みきな'"
+      />
+    </div>
+    <div class="conv-bubble-container">
+      <div class="conv-bubble-text">
+        {{ convText }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+.conv-container {
+  padding: 8px 0;
+  .icon-right {
+    display: grid;
+    grid-template-columns: 56px auto;
+    .conv-icon {
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: solid 2px #ff699b;
+        &.pink {
+          border-color: #ff699b;
+        }
+        &.red {
+          border-color: red;
+        }
+        &.white {
+          border-color: white;
+        }
+        &.yellow {
+          border-color: yellow;
+        }
+      }
+    }
+    .conv-bubble-container {
+      .conv-bubble-text {
+        background-color: #fff;
+        border-radius: 5px;
+        position: relative;
+        display: inline-block;
+        padding: 8px;
+        font-size: 0.8em;
+        line-height: 1.5em;
+        color: #333;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 40px;
+          height: 10px;
+          background: #fff;
+          top: 0;
+          left: -8px;
+          border-radius: 0 0 0 200%;
+        }
+      }
+    }
+  }
+}
