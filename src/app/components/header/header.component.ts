@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Location } from '@angular/common';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,12 +8,14 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  headerText: string;
+  @Input() headerTitle: string;
   faArrowLeft = faArrowLeft;
 
-  constructor() {}
+  constructor(private location: Location) {}
 
-  ngOnInit() {
-    this.headerText = 'さデラパッション';
+  ngOnInit() {}
+
+  goBack(): void {
+    this.location.back();
   }
 }

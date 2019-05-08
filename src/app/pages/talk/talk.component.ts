@@ -6,6 +6,7 @@ import { conversation } from '../../data/20190507-1';
   styleUrls: ['./talk.component.scss'],
 })
 export class TalkComponent implements OnInit {
+  title = 'オープニング（3分）';
   conversation;
   constructor() {
     this.conversation = conversation;

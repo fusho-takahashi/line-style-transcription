@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./talk-list.component.scss'],
 })
 export class TalkListComponent implements OnInit {
+  title = 'さくらシンデレラパッション';
   constructor(private router: Router) {}
 
   ngOnInit() {}
